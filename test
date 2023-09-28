@@ -1,5 +1,8 @@
 local font = renderer.setup_font("C:/windows/fonts/tahomabd.ttf", 50)
 
+print("TEST123")
+
 client.register_callback("paint", function(e)
+    print("TEST")
     renderer.text("hello world!", font, vec2_t.new(20, 20), 50, color_t.new(255, 255, 255, 255))
 end)
