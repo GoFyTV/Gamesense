@@ -1,1 +1,7 @@
-print("Test")
+local font = renderer.setup_font("C:/windows/fonts/tahomabd.ttf", 50)
+
+local function on_paint()
+    renderer.text("hello world!", font, vec2_t.new(20, 20), 50, color_t.new(255, 255, 255, 255))
+end
+
+client.register_callback("paint", on_paint)
